@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 
 const NavBar = () => {
    const links = <>
-   <Link to={'/'}><li className='m-2 hover:text-green-400 hover:border-2 border-green-400 p-2 rounded-xl'>Home</li></Link>
-   <Link to="/about"><li  className='m-2 hover:text-green-400 hover:border-2 border-green-400 p-2 rounded-xl'>About</li></Link>
-   <Link to="/readList"><li className='m-2 hover:text-green-400 hover:border-2 border-green-400 p-2 rounded-xl'>ReadList</li></Link>
+   <Link to={'/'}><li className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>Home</li></Link>
+   <Link to="/about"><li  className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>About</li></Link>
+   <Link to="/readList"><li className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>ReadList</li></Link>
    </>
 
   return (
