@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
    const links = <>
-   <Link to={'/'}><li className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>Home</li></Link>
-   <Link to="/about"><li  className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>About</li></Link>
-   <Link to="/readList"><li className='m-2 hover:text-purple-400 hover:underline   p-2 rounded-xl'>ReadList</li></Link>
+   <Link to={'/'}><li className='m-2 hover:text-purple-500 hover:underline   p-2 rounded-xl'>Home</li></Link>
+   <Link to="/about"><li  className='m-2 hover:text-purple-500 hover:underline   p-2 rounded-xl'>Apps</li></Link>
+   <Link to="/readList"><li className='m-2 hover:text-purple-500 hover:underline   p-2 rounded-xl'>Installation</li></Link>
    </>
 
   return (
@@ -21,7 +22,7 @@ const NavBar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl font-bold">Book Vibe</a>
+    <a className="btn btn-ghost text-xl font-bold"><img className='max-h-10/12' src="/assets/logo.png" alt="" />HERO.IO</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -29,8 +30,8 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <a className="btn bg-green-500 text-white">Sign In</a>
-    <a className="btn bg-sky-400 text-white">Sign Up</a>
+    <a className="btn bg-gradient-to-r from-indigo-600 to-purple-500 text-white"><FaGithub />Contribute</a>
+    
   </div>
 </div>
   );

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Stream millions of songs, podcasts, and playlists on the go.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
+    "size": 60,
+    "reviews": 32500000,
+    "ratingAvg": 4.4,
+    "downloads": "1B"
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Share your moments through photos, videos, and stories.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "size": 70,
+    "reviews": 160000000,
+    "ratingAvg": 4.3,
+    "downloads": "1B"
+  },
+  {
+    "id": 3,
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch, upload, and share videos from around the world.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
+    "size": 120,
+    "reviews": 150000000,
+    "ratingAvg": 4.5,
+    "downloads": "1B"
+  },
+  {
+    "id": 4,
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "Create and discover short-form videos across all genres.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/09/TikTok_logo.svg",
+    "size": 80,
+    "reviews": 130000000,
+    "ratingAvg": 4.4,
+    "downloads": "1B"
+  },
+  {
+    "id": 5,
+    "title": "WhatsApp",
+    "companyName": "WhatsApp LLC",
+    "description": "Chat and call your friends securely with end-to-end encryption.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "size": 50,
+    "reviews": 170000000,
+    "ratingAvg": 4.3,
+    "downloads": "5B"
+  },
+  {
+    "id": 6,
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Fast, secure, and powerful messaging app with cloud sync.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    "size": 40,
+    "reviews": 15000000,
+    "ratingAvg": 4.5,
+    "downloads": "1B"
+  },
+  {
+    "id": 7,
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Share moments instantly with friends using fun AR lenses.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
+    "size": 90,
+    "reviews": 34000000,
+    "ratingAvg": 4.2,
+    "downloads": "1B"
+  },
+  {
+    "id": 8,
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "description": "Host and join online meetings with high-quality video and audio.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg",
+    "size": 85,
+    "reviews": 21000000,
+    "ratingAvg": 4.3,
+    "downloads": "50M"
+  }
+]

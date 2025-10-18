@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Stream millions of songs, podcasts, and playlists on the go.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png",
+    "size": 60,
+    "reviews": 32500000,
+    "ratingAvg": 4.4,
+    "downloads": "10M"
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Share your moments through photos, videos, and stories.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png",
+    "size": 70,
+    "reviews": 160000000,
+    "ratingAvg": 4.3,
+    "downloads": "1B"
+  },
+  {
+    "id": 3,
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch, upload, and share videos from around the world.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png",
+    "size": 120,
+    "reviews": 150000000,
+    "ratingAvg": 4.5,
+    "downloads": "10M"
+  },
+  {
+    "id": 4,
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "Create and discover short-form videos across all genres.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/TikTok_logo.svg/1024px-TikTok_logo.svg.png",
+    "size": 80,
+    "reviews": 130000000,
+    "ratingAvg": 4.4,
+    "downloads": "1B"
+  },
+  {
+    "id": 5,
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "description": "Chat and call your friends securely with end-to-end encryption.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png",
+    "size": 50,
+    "reviews": 170000000,
+    "ratingAvg": 4.3,
+    "downloads": "5B"
+  },
+  {
+    "id": 6,
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Fast, secure, and powerful messaging app with cloud sync.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png",
+    "size": 40,
+    "reviews": 15000000,
+    "ratingAvg": 4.5,
+    "downloads": "10M"
+  },
+  {
+    "id": 7,
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Share moments instantly with friends using fun AR lenses.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1024px-Snapchat_logo.svg.png",
+    "size": 90,
+    "reviews": 34000000,
+    "ratingAvg": 4.2,
+    "downloads": "10M"
+  },
+  {
+    "id": 8,
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "description": "Host and join online meetings with high-quality video and audio.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zoom_Communications_Logo.svg/1024px-Zoom_Communications_Logo.svg.png",
+    "size": 85,
+    "reviews": 21000000,
+    "ratingAvg": 4.3,
+    "downloads": "50M"
+  },
+  {
+    "id": 9,
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "description": "Professional networking to connect with colleagues and grow your career.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/LinkedIn_Logo.svg/1024px-LinkedIn_Logo.svg.png",
+    "size": 80,
+    "reviews": 12000000,
+    "ratingAvg": 4.1,
+    "downloads": "10M"
+  },
+  {
+    "id": 10,
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "description": "Chat, voice, and video — all in one place for your communities and friends.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discord_logo.svg/1024px-Discord_logo.svg.png",
+    "size": 70,
+    "reviews": 18000000,
+    "ratingAvg": 4.4,
+    "downloads": "8M"
+  },
+  {
+    "id": 11,
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "description": "Dive into anything — Reddit is home to thousands of communities.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Reddit_logo_new.svg/1024px-Reddit_logo_new.svg.png",
+    "size": 65,
+    "reviews": 15000000,
+    "ratingAvg": 4.3,
+    "downloads": "50M"
+  },
+  {
+    "id": 12,
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "description": "Discover ideas and inspiration for your next project or hobby.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pinterest_logo.svg/1024px-Pinterest_logo.svg.png",
+    "size": 60,
+    "reviews": 11000000,
+    "ratingAvg": 4.3,
+    "downloads": "50M"
+  },
+  {
+    "id": 13,
+    "title": "Skype",
+    "companyName": "Skype Technologies S.A.",
+    "description": "Call and chat with people worldwide through voice and video.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Skype_logo_%282019%29.svg/1024px-Skype_logo_%282019%29.svg.png",
+    "size": 75,
+    "reviews": 8000000,
+    "ratingAvg": 4.0,
+    "downloads": "30M"
+  },
+  {
+    "id": 14,
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "description": "Secure file storage, sharing and collaboration in the cloud.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dropbox_logo_2017.svg/1024px-Dropbox_logo_2017.svg.png",
+    "size": 65,
+    "reviews": 6000000,
+    "ratingAvg": 4.1,
+    "downloads": "20M"
+  },
+  {
+    "id": 15,
+    "title": "Slack",
+    "companyName": "Slack Technologies, Inc.",
+    "description": "Team communication and collaboration platform.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Slack_logo_2019.svg/1024px-Slack_logo_2019.svg.png",
+    "size": 80,
+    "reviews": 5000000,
+    "ratingAvg": 4.2,
+    "downloads": "15M"
+  },
+  {
+    "id": 16,
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "description": "Photo organization, backup and sharing with smart features.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Photos_icon_%282023%29.svg/1024px-Google_Photos_icon_%282023%29.svg.png",
+    "size": 70,
+    "reviews": 10000000,
+    "ratingAvg": 4.5,
+    "downloads": "1B"
+  },
+  {
+    "id": 17,
+    "title": "Adobe Photoshop Express",
+    "companyName": "Adobe Inc.",
+    "description": "Edit and retouch your photos with powerful tools on your phone.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Adobe_Photoshop_CC_icon.svg/1024px-Adobe_Photoshop_CC_icon.svg.png",
+    "size": 80,
+    "reviews": 9000000,
+    "ratingAvg": 4.4,
+    "downloads": "20M"
+  },
+  {
+    "id": 18,
+    "title": "Snapseed",
+    "companyName": "Google LLC",
+    "description": "Professional photo editing for mobile devices.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Snapseed_Icon.svg/1024px-Snapseed_Icon.svg.png",
+    "size": 55,
+    "reviews": 2000000,
+    "ratingAvg": 4.6,
+    "downloads": "10M"
+  },
+  {
+    "id": 19,
+    "title": "Opera Browser",
+    "companyName": "Opera Software",
+    "description": "Fast, free and secure web browser with built-in VPN.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Opera_web_browser_logo_2015.svg/1024px-Opera_web_browser_logo_2015.svg.png",
+    "size": 55,
+    "reviews": 4000000,
+    "ratingAvg": 4.0,
+    "downloads": "20M"
+  },
+  {
+    "id": 20,
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Store, access and share files from anywhere securely.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Google_Drive_logo.svg/1024px-Google_Drive_logo.svg.png",
+    "size": 75,
+    "reviews": 7000000,
+    "ratingAvg": 4.4,
+    "downloads": "15M"
+  }
+]
