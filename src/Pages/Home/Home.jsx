@@ -10,6 +10,7 @@ const Home = () => {
     <div>
       <Banner />
       <Apps data={data} />
+      
     </div>
   );
 };

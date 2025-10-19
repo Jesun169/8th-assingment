@@ -6,17 +6,6 @@ import App from '../App/App';
 const Apps = ({data}) => {
   const [allApps, setAllApps]=useState([]);
 
-//   useEffect(()=>{
-//   fetch("8appData.json")
-//   .then(res=>res.json())
-//   .then(data=>{
-//     setAllApps(data)
-//   })
-// },[])
-
-// const appPromise=fetch("./8appData.json")
-// .then(res=>res.json())
-
   return (
     <div>
       <h1 className='text-4xl font-bold text-center p-6'>Trending Apps</h1>
