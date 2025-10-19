@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GoDownload } from 'react-icons/go'; 
 import { FaStar } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 const App = ({ singleApp }) => {
   const {
     id,
@@ -12,7 +12,7 @@ const App = ({ singleApp }) => {
   } = singleApp;
 
   return (
-    <Link to={`/appDetail/${id}`}>
+    <Link to={`/appDetails/${id}`}>
     <div key={id} className="card bg-white shadow-sm p-4">
       <figure>
         <img className="h-[100px] w-[100px]" src={image} alt={title} />

@@ -28,11 +28,6 @@ export const router = createBrowserRouter([
         element: <Installation />,
         loader: () => fetch('/20appData.json')
       },
-
-      // {
-      //   path: "installation",
-      //   element:<Installation></Installation>
-      // },
       {
         path: "appDetails/:appId",
         loader: () => fetch("/20appData.json"),

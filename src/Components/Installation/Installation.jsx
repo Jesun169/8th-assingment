@@ -1,14 +1,18 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { getInstalledApp } from '../../Utility/addToDB';
+import { getInstalledApp, removeFromStoreDB } from '../../Utility/addToDB';
 
 const Installation = () => {
-  const allApps = useLoaderData(); 
-const installedAppIds = getInstalledApp().map(id => Number(id));
+  const allApps = useLoaderData();
+  const [installedAppIds, setInstalledAppIds] = useState(getInstalledApp().map(Number));
 
-const installedApps = allApps.filter(app => installedAppIds.includes(app.id));
+  // Handle uninstall app
+  const handleUninstall = (id) => {
+    removeFromStoreDB(id);  // Remove app from the localStorage
+    setInstalledAppIds(prev => prev.filter(appId => appId !== id));  // Update local state
+  };
 
+  const installedApps = allApps.filter(app => installedAppIds.includes(app.id));
 
   if (installedApps.length === 0) {
     return (
@@ -36,8 +40,11 @@ const installedApps = allApps.filter(app => installedAppIds.includes(app.id));
               Size: {app.size} MB | Rating: {app.ratingAvg}
             </div>
             <div className="card-actions justify-end mt-4">
-              <button className="btn btn-outline btn-success" disabled>
-                Installed
+              <button
+                className="btn btn-outline btn-error"
+                onClick={() => handleUninstall(app.id)}
+              >
+                Uninstall
               </button>
             </div>
           </div>

@@ -11,15 +11,11 @@ image
 ratingAvg
 }=singleApp
 
-
-console.log(id);
-
-
   
   return (
     <Link to={`/appDetails/${id}`}>
     <div>
-         <div className="card bg-white shadow-sm p-4">
+        <div className="card bg-white shadow-sm p-4">
   <figure>
     <img className='h-[100px] w-[100px]'
       src={image}
@@ -38,8 +34,6 @@ ratingAvg}</div>
   </div>
 </div>
     </div>
-    <Link to={`/appDetails/${id}`}>View Details</Link>
-
     </Link>
     
   );
