@@ -1,15 +1,23 @@
 import React, { use } from 'react';
 import { GoDownload } from "react-icons/go";
 import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const App = ({singleApp}) => {
   const{
+    id,
 image
 ,title,downloads,
 ratingAvg
 }=singleApp
+
+
+console.log(id);
+
+
   
   return (
+    <Link to={`/appDetails/${id}`}>
     <div>
          <div className="card bg-white shadow-sm p-4">
   <figure>
@@ -30,6 +38,10 @@ ratingAvg}</div>
   </div>
 </div>
     </div>
+    <Link to={`/appDetails/${id}`}>View Details</Link>
+
+    </Link>
+    
   );
 };
 
