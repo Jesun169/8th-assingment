@@ -1,10 +1,11 @@
 import React, { Suspense, useEffect, useState } from 'react';
-import { data } from 'react-router';
+import { data, Link } from 'react-router';
 import App from '../App/App';
 
 
 const Apps = ({data}) => {
   const [allApps, setAllApps]=useState([]);
+  
 
   return (
     <div>
@@ -17,7 +18,9 @@ const Apps = ({data}) => {
       </div>
       </Suspense>
       <div className='flex justify-center mt-10'>
+        <Link to="/appInfo">
         <button className="btn btn-active btn-primary bg-gradient-to-r from-indigo-600 to-purple-500 rounded">Show All</button>
+        </Link>
       </div>
     </div>
   );

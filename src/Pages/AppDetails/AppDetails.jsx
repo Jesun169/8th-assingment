@@ -4,8 +4,8 @@ import { GoDownload } from "react-icons/go";
 import { FaStar } from "react-icons/fa";
 import { MdReviews } from "react-icons/md";
 import { addToStoreDB, getInstalledApp, removeFromStoreDB } from '../../Utility/addToDB';
-import { toast } from 'react-toastify'; // Import react-toastify
-import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AppDetails = () => {
   const { appId } = useParams();
@@ -23,70 +23,78 @@ const AppDetails = () => {
   }, [id]);
 
   if (!singleApp) {
-    return <div>App not found</div>;
+    return <div className="p-4 text-center text-xl">App not found</div>;
   }
 
   const { title, image, size, companyName, downloads, reviews, ratingAvg } = singleApp;
 
-  // Handle Install
   const handleInstall = () => {
-    addToStoreDB(id); // Add app to installed list
-    setInstalled(true); // Update state to reflect installation
-    toast.success(`${title} installed successfully!`); // Show toast for installation
+    addToStoreDB(id);
+    setInstalled(true);
+    toast.success(`${title} installed successfully!`);
   };
 
-  // Handle Uninstall
   const handleUninstall = () => {
-    removeFromStoreDB(id); // Remove app from installed list
-    setInstalled(false); // Update state to reflect uninstallation
-    toast.error(`${title} uninstalled successfully!`); // Show toast for uninstallation
+    removeFromStoreDB(id);
+    setInstalled(false);
+    toast.error(`${title} uninstalled successfully!`);
   };
 
   return (
-    <div className="card card-side bg-base-300 shadow-sm ">
-      <figure>
+    <div className="card bg-base-300 shadow-sm flex flex-col md:flex-row max-w-6xl mx-auto p-4 md:p-8 rounded-lg">
+      {/* Image Section */}
+      <figure className="flex-shrink-0 md:w-1/2 flex justify-center">
         <img
-          className='w-[350px] h-[350px] object-contain mt-10 ml-5 p-5 shadow-xl bg-white relative rounded'
+          className='w-48 h-48 md:w-[350px] md:h-[350px] object-contain p-5 shadow-xl bg-white rounded'
           src={image}
           alt={title}
         />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title text-4xl font-bold">{title}</h2>
-        <p className='text-2xl'>
-          Developed by{' '}
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>
-            {companyName}
-          </span>
-        </p>
 
-        <hr className="h-px my-8 border-0 dark:bg-gray-300" />
+      {/* Details Section */}
+      <div className="card-body md:w-1/2 flex flex-col justify-between">
+        <div>
+          <h2 className="card-title text-3xl md:text-4xl font-bold">{title}</h2>
+          <p className='text-lg md:text-2xl mt-2'>
+            Developed by{' '}
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>
+              {companyName}
+            </span>
+          </p>
 
-        <div className='flex gap-20'>
-          <div>
-            <GoDownload className='text-5xl text-green-400 ' />
-            <p className='mt-3 text-2xl'>Downloads</p>
-            <p className='mt-3 text-4xl font-extrabold'>{downloads}</p>
-          </div>
-          <div>
-            <FaStar className='text-5xl text-orange-400' />
-            <p className='mt-3 text-2xl'>Average Ratings</p>
-            <p className='mt-3 text-4xl font-extrabold'>{ratingAvg}</p>
-          </div>
-          <div>
-            <MdReviews className='text-5xl text-purple-500' />
-            <p className='mt-3 text-2xl'>Total Reviews</p>
-            <p className='mt-3 text-4xl font-extrabold'>{reviews}</p>
+          <hr className="h-px my-6 border-0 bg-gray-300" />
+
+          <div className='flex flex-col sm:flex-row sm:gap-10 gap-6'>
+            <div className="flex flex-col items-center sm:items-start">
+              <GoDownload className='text-4xl sm:text-5xl text-green-400' />
+              <p className='mt-2 text-lg sm:text-2xl'>Downloads</p>
+              <p className='mt-1 text-3xl sm:text-4xl font-extrabold'>{downloads}</p>
+            </div>
+            <div className="flex flex-col items-center sm:items-start">
+              <FaStar className='text-4xl sm:text-5xl text-orange-400' />
+              <p className='mt-2 text-lg sm:text-2xl'>Average Ratings</p>
+              <p className='mt-1 text-3xl sm:text-4xl font-extrabold'>{ratingAvg}</p>
+            </div>
+            <div className="flex flex-col items-center sm:items-start">
+              <MdReviews className='text-4xl sm:text-5xl text-purple-500' />
+              <p className='mt-2 text-lg sm:text-2xl'>Total Reviews</p>
+              <p className='mt-1 text-3xl sm:text-4xl font-extrabold'>{reviews}</p>
+            </div>
           </div>
         </div>
 
-        <div className="card-actions justify-baseline">
+        <div className="card-actions justify-start md:justify-baseline mt-6">
+          <ToastContainer position="top-center" autoClose={2000} />
           <button
-            onClick={installed ? handleUninstall : handleInstall}
-            className={`mt-5 btn ${installed ? 'bg-red-400' : 'bg-green-400'} rounded`}
-          >
-            {installed ? 'Uninstall' : `Install Now (${size} MB)`}
-          </button>
+  onClick={handleInstall}
+  disabled={installed}
+  className={`btn mt-5 px-6 py-3 text-lg rounded ${
+    installed ? 'bg-green-400 cursor-not-allowed' : 'bg-green-400 hover:bg-green-500'
+  } transition-colors duration-300`}
+>
+  {installed ? 'Installed' : `Install Now (${size} MB)`}
+</button>
+
         </div>
       </div>
     </div>

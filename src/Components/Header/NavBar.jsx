@@ -23,7 +23,10 @@ const NavBar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl font-bold"><img className='max-h-10/12' src="/assets/logo.png" alt="" />HERO.IO</a>
+    <Link to="/"><aside className="flex items-center text-black">
+          <img className="h-10" src="/assets/logo.png" alt="HERO.IO Logo" />
+          <p>HERO.IO</p>
+        </aside></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
