@@ -107,7 +107,7 @@ const AppInfo = () => {
         ) : (
           <div className="col-span-full text-center  text-black mt-10">
             <div className='flex justify-center mt-5'>
-              <img className='w-[300px] h-auto' src="/src/assets/OBJECTS.png" alt="" />
+              <img className='w-[300px] h-auto' src="/assets/App-Error.png" alt="" />
             </div>
             <h1 className='text-4xl font-bold mt-10'>OPPS!! APP NOT FOUND</h1>
             <p className='mt-5 text-gray-600'>The App you are requesting is not found on our system.  please try another apps</p>
