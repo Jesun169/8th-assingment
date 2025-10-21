@@ -40,6 +40,7 @@ const AppInfo = () => {
 
   const navigate=useNavigate();
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -59,7 +60,10 @@ const AppInfo = () => {
     fetchData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className='flex text-3xl text-center'>
+    <div><img src="/assets/logo.png" alt="Loading..." className="w-20 h-20" /></div>
+    <div>Loading...</div>
+</div>;
   if (error) return <div>Error: {error}</div>;
 
   

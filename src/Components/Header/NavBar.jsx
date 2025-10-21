@@ -34,7 +34,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <a className="btn bg-gradient-to-r from-indigo-600 to-purple-500 text-white"><FaGithub />Contribute</a>
+    <a className="btn bg-gradient-to-r from-indigo-600 to-purple-500 text-white" href="https://github.com/Jesun169"><FaGithub />Contribute</a>
     
   </div>
 </div>

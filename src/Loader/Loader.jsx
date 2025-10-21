@@ -1,0 +1,16 @@
+
+import React from 'react';
+
+const Loader = () => {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-80">
+      <h1><span className="loading loading-bars loading-xl"></span></h1>
+      
+
+      
+      <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+    </div>
+  );
+};
+
+export default Loader;

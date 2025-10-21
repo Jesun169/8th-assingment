@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Banner = () => {
+
+
   return (
     <div>
       <div className='text-center px-4 md:px-8'>
