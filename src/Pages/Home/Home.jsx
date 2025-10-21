@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../../Banner/Banner';
+import Banner from '../../Components/Banner/Banner';
 import Apps from '../Apps/Apps';
 import { useLoaderData } from 'react-router-dom'; // ✅ FIXED
 
